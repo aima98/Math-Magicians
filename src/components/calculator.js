@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from './Buttons';
 
 class Calculator extends React.Component {
   constructor(props) {
@@ -8,135 +9,31 @@ class Calculator extends React.Component {
 
   render() {
     return (
-      <div className="calculator-container">
-        <table id="calculator" cellSpacing="0">
-          <tbody id="cal-body">
-            <tr className="result-container">
-              <td colSpan="4">
-                <input type="text" className="result" placeholder="0" />
-                {' '}
-              </td>
-            </tr>
-
-            <tr>
-              <td>
-                <button type="button" className="non-operators">
-                  AC
-                </button>
-              </td>
-
-              <td>
-                <button type="button" className="non-operators">
-                  +/-
-                </button>
-              </td>
-
-              <td>
-                <button type="button" className="non-operators">
-                  %
-                </button>
-              </td>
-
-              <td>
-                <button type="button" className="operators">
-                  ÷
-                </button>
-              </td>
-            </tr>
-
-            <tr>
-              <td>
-                <button type="button" className="non-operators">
-                  7
-                </button>
-              </td>
-
-              <td>
-                <button type="button" className="non-operators">
-                  8
-                </button>
-              </td>
-
-              <td>
-                <button type="button" className="non-operators">
-                  9
-                </button>
-              </td>
-
-              <td>
-                <button type="button" className="operators">
-                  x
-                </button>
-              </td>
-            </tr>
-
-            <tr>
-              <td>
-                <button type="button" className="non-operators">
-                  4
-                </button>
-              </td>
-
-              <td>
-                <button type="button" className="non-operators">
-                  5
-                </button>
-              </td>
-              <td>
-                <button type="button" className="non-operators">
-                  6
-                </button>
-              </td>
-              <td>
-                <button type="button" className="operators">
-                  -
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <button type="button" className="non-operators">
-                  1
-                </button>
-              </td>
-              <td>
-                <button type="button" className="non-operators">
-                  2
-                </button>
-              </td>
-              <td>
-                <button type="button" className="non-operators">
-                  3
-                </button>
-              </td>
-              <td>
-                <button type="button" className="operators">
-                  +
-                </button>
-              </td>
-            </tr>
-
-            <tr>
-              <td colSpan="2">
-                <button type="button" className="non-operators">
-                  0
-                </button>
-              </td>
-
-              <td>
-                <button type="button" className="non-operators">
-                  .
-                </button>
-              </td>
-
-              <td>
-                <button type="button" className="operators">
-                  =
-                </button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <div className="calculator-grid">
+        <div className="output">
+          <div className="current-result">
+            0
+          </div>
+        </div>
+        <Button value="AC" />
+        <Button value="+/-" />
+        <Button value="%" />
+        <Button value="÷" bg="orange" />
+        <Button value={7} />
+        <Button value={8} />
+        <Button value={9} />
+        <Button value="*" bg="orange" />
+        <Button value={4} />
+        <Button value={5} />
+        <Button value={6} />
+        <Button value="-" bg="orange" />
+        <Button value={1} />
+        <Button value={2} />
+        <Button value={3} />
+        <Button value="+" bg="orange" />
+        <Button value={0} span="span1" />
+        <Button value="." />
+        <Button value="=" bg="orange" />
       </div>
     );
   }

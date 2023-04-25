@@ -11,60 +11,45 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 100vh;
 }
 
-.calculator-container {
-  border: 1px solid rgb(128, 128, 128);
-  margin: 0;
+.calculator-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 6rem);
+  grid-template-rows: minmax(7rem, auto) repeat(5, 4em);
+  margin-bottom: 1em;
 }
 
-table {
-  border-spacing: 0;
+.button {
+  border: 0.1px solid #e6dfdf;
+  outline: none;
+  font-size: 1.2rem;
 }
 
-tbody {
-  background: rgb(209, 209, 209);
+button:focus,
+button:hover:not(.orange) {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: azure;
 }
 
-tr {
-  width: 100%;
+.orange {
+  background-color: orange;
 }
 
-td > input {
-  padding: 10px 0 25px 0;
-  border: 0;
-  background: rgb(163, 163, 163);
-  width: 100%;
-  text-align: right;
+.output {
+  display: flex;
+  justify-content: flex-end;
+  grid-column: 1 / -1;
+  background-color: #413e3e;
+  color: white;
+  padding-inline: 0.5em;
 }
 
-input[type="text"] {
-  padding: 15px 0 15px 0;
+.current-result {
+  font-size: 3rem;
 }
 
-input::placeholder {
-  font-size: 1.5em;
-  color: #fff;
-}
-
-td > button {
-  padding: 15px 40px;
-  width: 100%;
-  text-align: center;
-  border: 0;
-}
-
-.operators {
-  background: rgb(255, 136, 1);
-}
-
-.operators:hover {
-  background: rgb(167, 89, 0);
-  color: #fff;
-}
-
-.non-operators:hover {
-  background: rgb(124, 124, 124);
-  color: #fff;
+.span1 {
+  grid-column: 1 / 3;
 }
