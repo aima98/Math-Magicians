@@ -27,7 +27,7 @@ function Calculator() {
       <Button value="7" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
       <Button value="8" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
       <Button value="9" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
-      <Button value="*" bg="orange" span="" press={(e) => handleClick(e.target.textContent)} />
+      <Button value="x" bg="orange" span="" press={(e) => handleClick(e.target.textContent)} />
       <Button value="4" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
       <Button value="5" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
       <Button value="6" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
