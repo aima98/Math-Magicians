@@ -53,6 +53,9 @@ Linters
 - **Using of correct GitHub flow**
 - **Documenting in a professional way**
 - **Following React documentation**
+- **Project setup with React**
+- **Adding components**
+- **Performing basic math operations**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -66,6 +69,7 @@ In order to run this project you need:
 
 - **Visual Studio Code**
 - **Git Bash**
+- **Node js**
 
 ### Setup
 
