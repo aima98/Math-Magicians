@@ -1,5 +1,11 @@
 @import url("http://fonts.cdnfonts.com/css/cascadia-code");
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   box-sizing: border-box;
   margin: 0;
@@ -9,9 +15,15 @@ html {
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
   height: 100vh;
+}
+
+.app {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
 }
 
 .calculator-grid {
@@ -19,6 +31,8 @@ body {
   grid-template-columns: repeat(4, 6rem);
   grid-template-rows: minmax(7rem, auto) repeat(5, 4em);
   margin-bottom: 1em;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .button {
@@ -55,7 +69,7 @@ button:hover:not(.orange) {
 }
 
 .quote_display {
-  width: 400px;
+  width: 500px;
   margin-top: -3em;
 }
 

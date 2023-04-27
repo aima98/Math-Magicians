@@ -5,8 +5,10 @@ import DisplayQuote from './components/displayQuote';
 function App() {
   return (
     <>
-      <Calculator />
-      <DisplayQuote />
+      <div className="app">
+        <Calculator />
+        <DisplayQuote />
+      </div>
     </>
   );
 }

@@ -23,7 +23,7 @@ export default function DisplayQuote() {
       }
     }
     getQuote();
-  }, []);
+  }, [setData, setError, setLoading]);
 
   if (loading) {
     return (
