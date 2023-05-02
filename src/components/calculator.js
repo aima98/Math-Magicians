@@ -11,35 +11,44 @@ function Calculator() {
 
   const { total, next, operation } = value;
 
+  const textStyle = {
+    fontSize: '2em',
+    color: 'darkslategray',
+    marginTop: '2em',
+  };
+
   return (
-    <div className="calculator-grid">
-      <div className="output">
-        <div className="current-result">
-          {total}
-          {operation}
-          {next}
+    <>
+      <b style={textStyle} />
+      <div className="calculator-grid">
+        <div className="output">
+          <div className="current-result">
+            {total}
+            {operation}
+            {next}
+          </div>
         </div>
+        <Button value="AC" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
+        <Button value="+/-" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
+        <Button value="%" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
+        <Button value="÷" bg="orange" span="" press={(e) => handleClick(e.target.textContent)} />
+        <Button value="7" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
+        <Button value="8" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
+        <Button value="9" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
+        <Button value="x" bg="orange" span="" press={(e) => handleClick(e.target.textContent)} />
+        <Button value="4" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
+        <Button value="5" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
+        <Button value="6" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
+        <Button value="-" bg="orange" span="" press={(e) => handleClick(e.target.textContent)} />
+        <Button value="1" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
+        <Button value="2" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
+        <Button value="3" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
+        <Button value="+" bg="orange" span="" press={(e) => handleClick(e.target.textContent)} />
+        <Button value="0" bg="" span="span1" press={(e) => handleClick(e.target.textContent)} />
+        <Button value="." bg="" span="" press={(e) => handleClick(e.target.textContent)} />
+        <Button value="=" bg="orange" span="" press={(e) => handleClick(e.target.textContent)} />
       </div>
-      <Button value="AC" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
-      <Button value="+/-" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
-      <Button value="%" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
-      <Button value="÷" bg="orange" span="" press={(e) => handleClick(e.target.textContent)} />
-      <Button value="7" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
-      <Button value="8" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
-      <Button value="9" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
-      <Button value="x" bg="orange" span="" press={(e) => handleClick(e.target.textContent)} />
-      <Button value="4" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
-      <Button value="5" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
-      <Button value="6" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
-      <Button value="-" bg="orange" span="" press={(e) => handleClick(e.target.textContent)} />
-      <Button value="1" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
-      <Button value="2" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
-      <Button value="3" bg="" span="" press={(e) => handleClick(e.target.textContent)} />
-      <Button value="+" bg="orange" span="" press={(e) => handleClick(e.target.textContent)} />
-      <Button value="0" bg="" span="span1" press={(e) => handleClick(e.target.textContent)} />
-      <Button value="." bg="" span="" press={(e) => handleClick(e.target.textContent)} />
-      <Button value="=" bg="orange" span="" press={(e) => handleClick(e.target.textContent)} />
-    </div>
+    </>
   );
 }
 
