@@ -8,7 +8,7 @@ describe('click Event test', () => {
     render(
       <BrowserRouter>
         <Header />
-      </BrowserRouter>
+      </BrowserRouter>,
     );
     const header = screen.queryByTestId('header');
     const homeLink = screen.getByText('Home');
@@ -21,7 +21,7 @@ describe('click Event test', () => {
     render(
       <BrowserRouter>
         <Header />
-      </BrowserRouter>
+      </BrowserRouter>,
     );
     const header = screen.queryByTestId('header');
     const homeLink = screen.getByText('Calculator');
@@ -34,7 +34,7 @@ describe('click Event test', () => {
     render(
       <BrowserRouter>
         <Header />
-      </BrowserRouter>
+      </BrowserRouter>,
     );
     const header = screen.queryByTestId('header');
     const homeLink = screen.getByText('Quote');
@@ -49,7 +49,7 @@ describe('snapshot test', () => {
     const headerTree = renderer.create(
       <BrowserRouter>
         <Header />
-      </BrowserRouter>
+      </BrowserRouter>,
     ).toJSON();
     expect(headerTree).toMatchSnapshot();
   });

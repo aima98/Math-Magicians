@@ -22,7 +22,7 @@ function Calculator() {
       <b style={textStyle} />
       <div className="calculator-grid">
         <div className="output">
-          <div className="current-result">
+          <div className="current-result" data-testid="output">
             {total}
             {operation}
             {next}

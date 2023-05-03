@@ -1,14 +1,11 @@
-import { fireEvent, render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
-
 import DisplayQuote from '../displayQuote';
-import { findRenderedComponentWithType } from 'react-dom/test-utils';
-import { string } from 'prop-types';
 
 describe('test page rendering', () => {
   it('test page rendering Quote Title', () => {
     render(
-      <DisplayQuote />
+      <DisplayQuote />,
     );
 
     const quoteTitle = screen.queryByText('Quote');
@@ -17,7 +14,7 @@ describe('test page rendering', () => {
 
   it('test page rendering Quote existence', () => {
     render(
-      <DisplayQuote />
+      <DisplayQuote />,
     );
 
     const quoteTitle = screen.queryByText('Quote');
@@ -28,9 +25,8 @@ describe('test page rendering', () => {
 describe('snapshot testing', () => {
   test('should persist', () => {
     const quoteTree = renderer.create(
-      <DisplayQuote />
+      <DisplayQuote />,
     );
-    console.log(quoteTree);
     expect(quoteTree).toMatchSnapshot();
   });
 });
