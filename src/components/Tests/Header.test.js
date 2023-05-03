@@ -13,8 +13,8 @@ describe('click Event test', () => {
     const header = screen.queryByTestId('header');
     const homeLink = screen.getByText('Home');
     fireEvent.click(homeLink);
-    const headerAfterClock = screen.queryByTestId('header');
-    expect(header.outerHTML).toBe(headerAfterClock.outerHTML);
+    const headerAfterClick = screen.queryByTestId('header');
+    expect(header.outerHTML).toBe(headerAfterClick.outerHTML);
   });
 
   it('render test click on Calculator link', () => {
@@ -26,8 +26,8 @@ describe('click Event test', () => {
     const header = screen.queryByTestId('header');
     const homeLink = screen.getByText('Calculator');
     fireEvent.click(homeLink);
-    const headerAfterClock = screen.queryByTestId('header');
-    expect(header.outerHTML).toBe(headerAfterClock.outerHTML);
+    const headerAfterClick = screen.queryByTestId('header');
+    expect(header.outerHTML).toBe(headerAfterClick.outerHTML);
   });
 
   it('render test click on Quote link', () => {
@@ -39,8 +39,8 @@ describe('click Event test', () => {
     const header = screen.queryByTestId('header');
     const homeLink = screen.getByText('Quote');
     fireEvent.click(homeLink);
-    const headerAfterClock = screen.queryByTestId('header');
-    expect(header.outerHTML).toBe(headerAfterClock.outerHTML);
+    const headerAfterClick = screen.queryByTestId('header');
+    expect(header.outerHTML).toBe(headerAfterClick.outerHTML);
   });
 });
 
