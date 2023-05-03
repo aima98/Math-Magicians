@@ -3,7 +3,7 @@ import styles from './Header.module.css';
 
 export default function Header() {
   return (
-    <header data-testid='header' className={styles.header}>
+    <header data-testid="header" className={styles.header}>
       <h1>Math Magicians</h1>
       <nav className={styles.nav}>
         <ul>
