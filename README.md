@@ -12,6 +12,10 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
   - [Install](#install)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
@@ -67,15 +71,53 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-- **Visual Studio Code**
-- **Git Bash**
-- **Node js**
+- Nodejs
+- Node Package Manager
+- VS Code text editor
 
 ### Setup
 
 Clone this repository to your desired folder:
-- **cd your-folder**
-- **git clone https://github.com/aima98/Math-Magicians**
+
+```sh
+  cd my-folder
+  git clone git@github.com:aima98/Math-Magicians.git
+```
+
+### Install
+
+Install this project with:
+
+  ```bash
+    cd math-magicians
+    npm install
+  ```
+
+### Usage
+
+To run the project, execute the following command:
+  ```bash
+    npm start
+  ```
+
+### Run tests
+
+To run tests, run the following command:
+
+- Jest Test
+```sh
+  npm test
+```
+
+- Stylint
+```bash 
+npx stylelint "**/*.{css,scss}"
+```
+
+- Eslint
+```bash
+  npx eslint "**/*.{js,jsx}"
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
