@@ -128,7 +128,6 @@ npx stylelint "**/*.{css,scss}"
 👤 **Oumaima Nejjari**
 
 - GitHub: [@aima98](https://github.com/aima98)
-- Twitter: [@NejjariOumaima](https://twitter.com/NejjariOumaima?t=RtmpuP_lmHYVD3EiP4AeMg&s=03)
 - LinkedIn: [Oumaima Nejjari](https://www.linkedin.com/in/oumaima-nejjari-375065171/)
 
 👤 **Sasan Moshirabadi**
