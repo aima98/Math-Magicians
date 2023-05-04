@@ -131,6 +131,10 @@ npx stylelint "**/*.{css,scss}"
 - Twitter: [@NejjariOumaima](https://twitter.com/NejjariOumaima?t=RtmpuP_lmHYVD3EiP4AeMg&s=03)
 - LinkedIn: [Oumaima Nejjari](https://www.linkedin.com/in/oumaima-nejjari-375065171/)
 
+👤 **Sasan Moshirabadi**
+
+- GitHub: [@dev89s](https://github.com/dev89s)
+- LinkedIn: [@sasan-moshirabadi-30a77025a](https://www.linkedin.com/in/sasan-moshirabadi-30a77025a/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
