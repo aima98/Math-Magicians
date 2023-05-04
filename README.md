@@ -11,6 +11,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)  
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -60,6 +61,12 @@ Linters
 - **Project setup with React**
 - **Adding components**
 - **Performing basic math operations**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- https://math-magician-wen0.onrender.com
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
