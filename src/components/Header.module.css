@@ -5,20 +5,29 @@
   margin-top: 9vh;
 }
 
+.header h1 {
+  display: flex;
+  justify-content: center;
+  margin-left: 30vh;
+  font-style: italic;
+  font-weight: 900;
+  color: #413e3e;
+}
+
 .nav ul {
   display: flex;
   align-items: center;
   gap: 9px;
   list-style: none;
   margin-top: -11vh;
-  margin-right: -35vh;
+  margin-right: -20vh;
 }
 
 .nav ul li a {
   text-decoration: none;
-  border: 1px solid black;
+  border: 1px solid #413e3e;
   padding: 0.5em;
-  color: black;
+  color: #413e3e;
   transition: 0.5s background-color, color ease;
 }
 
